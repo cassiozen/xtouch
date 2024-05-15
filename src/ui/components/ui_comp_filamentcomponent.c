@@ -234,7 +234,7 @@ lv_obj_t *ui_filamentComponent_create(lv_obj_t *comp_parent)
     lv_obj_set_width(cui_filamentScreenUnload, lv_pct(100));
     lv_obj_set_flex_grow(cui_filamentScreenUnload, 2);
     lv_obj_set_align(cui_filamentScreenUnload, LV_ALIGN_CENTER);
-    lv_label_set_text(cui_filamentScreenUnload, "UN\nLOAD");
+    lv_label_set_text(cui_filamentScreenUnload, "UNLOAD");
     lv_obj_add_flag(cui_filamentScreenUnload, LV_OBJ_FLAG_CLICKABLE);                                                                                                                                                                                                      /// Flags
     lv_obj_clear_flag(cui_filamentScreenUnload, LV_OBJ_FLAG_PRESS_LOCK | LV_OBJ_FLAG_CLICK_FOCUSABLE | LV_OBJ_FLAG_GESTURE_BUBBLE | LV_OBJ_FLAG_SNAPPABLE | LV_OBJ_FLAG_SCROLLABLE | LV_OBJ_FLAG_SCROLL_ELASTIC | LV_OBJ_FLAG_SCROLL_MOMENTUM | LV_OBJ_FLAG_SCROLL_CHAIN); /// Flags
     lv_obj_set_scrollbar_mode(cui_filamentScreenUnload, LV_SCROLLBAR_MODE_OFF);

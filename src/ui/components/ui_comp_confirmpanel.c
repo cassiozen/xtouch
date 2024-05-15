@@ -66,7 +66,7 @@ lv_obj_t *ui_confirmPanel_create(lv_obj_t *comp_parent)
     lv_obj_t *cui_confirmPanelContainer;
     cui_confirmPanelContainer = lv_obj_create(cui_confirmPanel);
     lv_obj_set_width(cui_confirmPanelContainer, lv_pct(100));
-    lv_obj_set_height(cui_confirmPanelContainer, LV_SIZE_CONTENT); /// 50
+    lv_obj_set_height(cui_confirmPanelContainer, LV_SIZE_CONTENT);
     lv_obj_set_flex_flow(cui_confirmPanelContainer, LV_FLEX_FLOW_ROW);
     lv_obj_set_flex_align(cui_confirmPanelContainer, LV_FLEX_ALIGN_CENTER, LV_FLEX_ALIGN_CENTER, LV_FLEX_ALIGN_CENTER);
     lv_obj_clear_flag(cui_confirmPanelContainer, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_PRESS_LOCK | LV_OBJ_FLAG_CLICK_FOCUSABLE | LV_OBJ_FLAG_GESTURE_BUBBLE | LV_OBJ_FLAG_SNAPPABLE | LV_OBJ_FLAG_SCROLLABLE | LV_OBJ_FLAG_SCROLL_ELASTIC | LV_OBJ_FLAG_SCROLL_MOMENTUM | LV_OBJ_FLAG_SCROLL_CHAIN); /// Flags
@@ -80,12 +80,13 @@ lv_obj_t *ui_confirmPanel_create(lv_obj_t *comp_parent)
     lv_obj_set_width(cui_confirmPanelCaption, lv_pct(100));      /// 1
     lv_obj_set_height(cui_confirmPanelCaption, LV_SIZE_CONTENT); /// 1
     lv_label_set_text(cui_confirmPanelCaption, "Are you sure?");
+    lv_obj_set_style_text_font(cui_confirmPanelCaption, lv_font_small, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_clear_flag(cui_confirmPanelCaption, LV_OBJ_FLAG_PRESS_LOCK | LV_OBJ_FLAG_CLICK_FOCUSABLE | LV_OBJ_FLAG_GESTURE_BUBBLE | LV_OBJ_FLAG_SNAPPABLE | LV_OBJ_FLAG_SCROLLABLE | LV_OBJ_FLAG_SCROLL_ELASTIC | LV_OBJ_FLAG_SCROLL_MOMENTUM | LV_OBJ_FLAG_SCROLL_CHAIN); /// Flags
     lv_obj_set_scrollbar_mode(cui_confirmPanelCaption, LV_SCROLLBAR_MODE_OFF);
     lv_obj_set_style_pad_left(cui_confirmPanelCaption, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_pad_right(cui_confirmPanelCaption, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_top(cui_confirmPanelCaption, 8, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_bottom(cui_confirmPanelCaption, 8, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_top(cui_confirmPanelCaption, 12, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_bottom(cui_confirmPanelCaption, 16, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     lv_obj_t *cui_confirmPanelNO;
     cui_confirmPanelNO = lv_label_create(cui_confirmPanelContainer);
@@ -102,10 +103,10 @@ lv_obj_t *ui_confirmPanel_create(lv_obj_t *comp_parent)
     lv_obj_set_style_bg_color(cui_confirmPanelNO, lv_color_hex(0xAA2A00), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(cui_confirmPanelNO, lv_color_hex(0x552A00), LV_PART_MAIN | LV_STATE_PRESSED);
     lv_obj_set_style_bg_opa(cui_confirmPanelNO, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_left(cui_confirmPanelNO, 8, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_right(cui_confirmPanelNO, 8, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_top(cui_confirmPanelNO, 8, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_bottom(cui_confirmPanelNO, 8, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_left(cui_confirmPanelNO, 12, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_right(cui_confirmPanelNO, 12, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_top(cui_confirmPanelNO, 16, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_bottom(cui_confirmPanelNO, 16, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     lv_obj_t *cui_confirmPanelNOLabel;
     cui_confirmPanelNOLabel = lv_label_create(cui_confirmPanelNO);
@@ -131,10 +132,10 @@ lv_obj_t *ui_confirmPanel_create(lv_obj_t *comp_parent)
     lv_obj_set_style_bg_color(cui_confirmPanelYES, lv_color_hex(0x2AAA00), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(cui_confirmPanelYES, lv_color_hex(0x2A5500), LV_PART_MAIN | LV_STATE_PRESSED);
     lv_obj_set_style_bg_opa(cui_confirmPanelYES, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_left(cui_confirmPanelYES, 8, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_right(cui_confirmPanelYES, 8, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_top(cui_confirmPanelYES, 8, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_bottom(cui_confirmPanelYES, 8, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_left(cui_confirmPanelYES, 12, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_right(cui_confirmPanelYES, 12, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_top(cui_confirmPanelYES, 16, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_bottom(cui_confirmPanelYES, 16, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     lv_obj_t *cui_confirmPanelYESLabel;
     cui_confirmPanelYESLabel = lv_label_create(cui_confirmPanelYES);

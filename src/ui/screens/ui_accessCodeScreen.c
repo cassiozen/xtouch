@@ -51,7 +51,7 @@ void ui_accessCodeScreen_screen_init(void)
     // lv_obj_t *ui_accessCodeScreenKeyboard;
     ui_accessCodeScreenKeyboard = lv_keyboard_create(ui_accessCodeScreen);
     lv_keyboard_set_mode(ui_accessCodeScreenKeyboard, LV_KEYBOARD_MODE_NUMBER);
-    lv_obj_set_height(ui_accessCodeScreenKeyboard, 190);
+    lv_obj_set_height(ui_accessCodeScreenKeyboard, 350);
     lv_obj_set_width(ui_accessCodeScreenKeyboard, lv_pct(100));
     lv_obj_add_flag(ui_accessCodeScreenKeyboard, LV_OBJ_FLAG_FLOATING);                                                                                                                                                                                                                               /// Flags
     lv_obj_clear_flag(ui_accessCodeScreenKeyboard, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_PRESS_LOCK | LV_OBJ_FLAG_CLICK_FOCUSABLE | LV_OBJ_FLAG_GESTURE_BUBBLE | LV_OBJ_FLAG_SNAPPABLE | LV_OBJ_FLAG_SCROLLABLE | LV_OBJ_FLAG_SCROLL_ELASTIC | LV_OBJ_FLAG_SCROLL_MOMENTUM | LV_OBJ_FLAG_SCROLL_CHAIN); /// Flags

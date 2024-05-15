@@ -27,7 +27,7 @@ void ui_printerPairScreen_screen_init(void)
 
     lv_obj_t *ui_printerPairScreenCaption;
     ui_printerPairScreenCaption = lv_label_create(ui_printerPairScreen);
-    lv_obj_set_height(ui_printerPairScreenCaption, 50);
+    lv_obj_set_height(ui_printerPairScreenCaption, 70);
     lv_obj_set_width(ui_printerPairScreenCaption, lv_pct(100));
     lv_label_set_text(ui_printerPairScreenCaption, "Pair Printer");
     lv_obj_set_style_text_align(ui_printerPairScreenCaption, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -55,8 +55,8 @@ void ui_printerPairScreen_screen_init(void)
     lv_obj_set_style_bg_opa(ui_printerPairScreenRoller, 255, LV_PART_SELECTED | LV_STATE_DEFAULT);
 
     ui_printerPairScreenSubmitButton = lv_obj_create(ui_printerPairScreen);
-    lv_obj_set_width(ui_printerPairScreenSubmitButton, 48);
-    lv_obj_set_height(ui_printerPairScreenSubmitButton, 48);
+    lv_obj_set_width(ui_printerPairScreenSubmitButton, 64);
+    lv_obj_set_height(ui_printerPairScreenSubmitButton, 64);
     lv_obj_set_x(ui_printerPairScreenSubmitButton, -8);
     lv_obj_set_y(ui_printerPairScreenSubmitButton, -8);
     lv_obj_set_align(ui_printerPairScreenSubmitButton, LV_ALIGN_BOTTOM_RIGHT);
