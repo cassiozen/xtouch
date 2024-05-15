@@ -48,7 +48,7 @@ void loadScreen(int screen)
     if (current != NULL)
     {
         lv_obj_clean(current);
-        lv_obj_del(current);
+        lv_obj_del_delayed(current, 100);
     }
 
     switch (screen)
