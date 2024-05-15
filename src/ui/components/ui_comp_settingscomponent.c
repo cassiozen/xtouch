@@ -152,6 +152,7 @@ lv_obj_t *ui_settingsComponent_create(lv_obj_t *comp_parent)
     lv_obj_set_style_pad_column(cui_settingsComponent, 4, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(cui_settingsComponent, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(cui_settingsComponent, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_clear_flag(cui_settingsComponent, LV_OBJ_FLAG_SCROLL_ELASTIC); /// Flags
     lv_obj_set_scrollbar_mode(cui_settingsComponent, LV_SCROLLBAR_MODE_ACTIVE);
 
     lv_obj_set_style_bg_color(cui_settingsComponent, lv_color_hex(0x2AFF00), LV_PART_SCROLLBAR | LV_STATE_DEFAULT);
